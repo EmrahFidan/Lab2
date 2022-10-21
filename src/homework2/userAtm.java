@@ -12,7 +12,7 @@ public class userAtm {
 		}
 
 	}
-
+	// switch between main menu and user input screen
 	public static void mainMenu(int balance[],int id){
 
 		Scanner value = new Scanner(System.in);
@@ -42,10 +42,20 @@ public class userAtm {
 		}
 
 	}
-
+	// choises
 	public static void checkBalance(int balance[], int id) {
 
 		System.out.println("\nThe balance is: " + balance[id]);
 
+	}
+
+	public static void withdraw(int balance[], int id) {
+
+		Scanner value = new Scanner(System.in);
+		System.out.print("\nEnter an amount to withdraw:");
+		int takeBalance = value.nextInt();
+
+		balance[id] = balance[id] - takeBalance;
+		
 	}
 }
