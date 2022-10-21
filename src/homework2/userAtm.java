@@ -76,4 +76,13 @@ public class userAtm {
 
 	}
 
+	public static int exit(int balance[]) {
+
+		Scanner value = new Scanner(System.in);
+		System.out.print("enter a id: ");
+		int id = value.nextInt();
+		
+		return id;
+	}
+
 }
