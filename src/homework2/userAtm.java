@@ -15,7 +15,7 @@ public class userAtm {
 		control(id,balance);
 
 	}
-	// 
+	// incorrect inputs
 	public static void control(int id,int balance[]) {
 		
 		if(id>=0 && id<10) {
