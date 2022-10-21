@@ -21,19 +21,19 @@ public class userAtm {
 		int choice = value.nextInt();
 
 		if(choice == 1) {
-			
+			checkBalance(balance,id);
 			mainMenu(balance,id);
 		}
 		else if(choice == 2) {
-			
+			withdraw(balance, id);
 			mainMenu(balance,id);
 		}
 		else if(choice == 3) {
-			
+			deposit(balance, id);
 			mainMenu(balance,id);
 		}
 		else if(choice == 4) {
-			
+			exit(balance);
 			mainMenu(balance,id);
 		}
 		else {
