@@ -56,6 +56,13 @@ public class userAtm {
 		int takeBalance = value.nextInt();
 
 		balance[id] = balance[id] - takeBalance;
+		// lack of balance
+		if (balance[id] < 0) {
+			balance[id] = balance[id] + takeBalance;
+			System.out.print("Your balance is " + balance[id]
+					+ "\nWithdraw amount is too large.\nYou are redirected to deposit menu\n");
+			deposit(balance, id);
+		}
 		
 	}
 
@@ -67,7 +74,6 @@ public class userAtm {
 
 		balance[id] = balance[id] + deposit;
 
-
 	}
-	
+
 }
