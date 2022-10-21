@@ -10,6 +10,8 @@ public class userAtm {
 		for(int i=0;i<10;i++) {
 			balance[i]=100;
 		}
+		// switch between menus
+		int id = exit(balance);
 
 	}
 	// switch between main menu and user input screen
