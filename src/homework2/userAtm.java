@@ -58,4 +58,16 @@ public class userAtm {
 		balance[id] = balance[id] - takeBalance;
 		
 	}
+
+	public static void deposit(int balance[], int id) {
+
+		System.out.print("\nEnter an amount to deposit:");
+		Scanner value = new Scanner(System.in);
+		int deposit = value.nextInt();
+
+		balance[id] = balance[id] + deposit;
+
+
+	}
+	
 }
