@@ -14,6 +14,20 @@ public class userAtm {
 		int id = exit(balance);
 
 	}
+
+	public static void control(int id,int balance[]) {
+		
+		if(id>=0 && id<10) {
+			
+			mainMenu(balance,id);
+		}
+		else{
+			System.out.println("User not found !!! Please enter between 0-9");
+			exit(balance);
+		}
+		
+	}
+
 	// switch between main menu and user input screen
 	public static void mainMenu(int balance[],int id){
 
