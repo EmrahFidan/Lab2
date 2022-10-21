@@ -12,9 +12,10 @@ public class userAtm {
 		}
 		// switch between menus
 		int id = exit(balance);
+		control(id,balance);
 
 	}
-
+	// 
 	public static void control(int id,int balance[]) {
 		
 		if(id>=0 && id<10) {
@@ -97,7 +98,8 @@ public class userAtm {
 		Scanner value = new Scanner(System.in);
 		System.out.print("enter a id: ");
 		int id = value.nextInt();
-		
+		control(id,balance);
+
 		return id;
 	}
 
