@@ -43,4 +43,9 @@ public class userAtm {
 
 	}
 
+	public static void checkBalance(int balance[], int id) {
+
+		System.out.println("\nThe balance is: " + balance[id]);
+
+	}
 }
